@@ -86,6 +86,8 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
+    //https://plchatboxws.onrender.com
+    //http://localhost:5000
     const response = await fetch('https://plchatboxws.onrender.com', {
         method: 'POST',
         headers: {
@@ -109,7 +111,7 @@ const handleSubmit = async (e) => {
 
         messageDiv.innerHTML = "Something went wrong"
         alert(err)
-    }
+    }git
 }
 
 form.addEventListener('submit', handleSubmit)
